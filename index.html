@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Character Creation</title>
+  <style>
+    /* ---------- Global Styles ---------- */
+    html, body {
+      background: #1e1e1e;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      /* Hide scrollbars in WebKit-based browsers */
+      overflow-y: scroll;
+    }
+    ::-webkit-scrollbar {
+      display: none;
+    }
+    html {
+      scrollbar-width: none;
+    }
+    
+    /* ---------- Container ---------- */
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+      background: #333;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      border-radius: 10px;
+    }
+    
+    h1.title {
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    
+    h2.step-title {
+      font-size: 1.5em;
+      margin-top: 30px;
+      border-bottom: 1px solid #555;
+      padding-bottom: 5px;
+    }
+    
+    p {
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+    
+    code {
+      background: #555;
+      padding: 2px 4px;
+      border-radius: 3px;
+      font-family: monospace;
+      color: #fff;
+    }
+    
+    /* ---------- Back to Top Button ---------- */
+    #backToTop {
+      background: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 1em;
+      margin: 20px auto 0 auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Character Creation</h1>
+    
+    <h2 class="step-title">Step 1: Open Your VMenu</h2>
+    <p>
+      Press <strong>F1</strong> to open your VMenu. From here, navigate to <em>Player Related Options &rarr; MP Ped Customization</em> and choose between <strong>Create Male Character</strong> or <strong>Create Female Character</strong>. Make sure you save your character once you’re done. You can also choose to <em>set as default character</em> so that every time you respawn or load in, your saved appearance automatically loads.
+    </p>
+    
+    <h2 class="step-title">Step 2: Character Appropriateness</h2>
+    <p>
+      Ensure your custom character is appropriate and sensible. <strong>Using any form of nudity is prohibited.</strong>
+    </p>
+    
+    <h2 class="step-title">Step 3: Create Civilian Characters & Vehicles</h2>
+    <p>
+      Once you’ve completed the above steps, press <strong>T</strong> on your keyboard to open the chat. Type <code>/civ</code> and the Civilian Menu will open. Here you can create Civilian Characters and Civilian Vehicles information.
+    </p>
+    <p>
+      When clicking on <em>Civilian Characters</em>, you are required to enter a First Name and Last Name for your character (they must be appropriate and not offensive). Once entered, you’ll be prompted to enter your <strong>QP (Query Person)</strong>.
+    </p>
+    
+    <h2 class="step-title">Step 4: QP (Query Person) Templates</h2>
+    <p>
+      QP's are formatted specifically to provide police with information about your person. Below are two templates you can use and modify:
+    </p>
+    <p>
+      <strong>Example One:</strong><br>
+      <code>"John Smith, Male Not Known Not Wanted, Nil Flags, Comes back to a 271 Address, Nil Actives, Class 1 Full Licence, 0 Demerits"</code>
+    </p>
+    <p>
+      <strong>Example Two:</strong><br>
+      <code>"John Smith, Male, Known and Wanted, Flags for carries weapons, Comes back to a 106 Address, Nil Actives, Class 1 Full Licence, 20 Demerits"</code>
+    </p>
+    
+    <h2 class="step-title">Step 5: Activate Your Character</h2>
+    <p>
+      Once you’ve entered your QP, your character is created. Next, you must mark your character as <strong>active</strong>. Although you can have multiple characters, only one can be active at any given time. Characters remain active only while you're in-game; therefore, when you rejoin the server, you'll need to use <code>/civ</code> again to log in to your desired character via the Civilian Characters menu.
+    </p>
+    
+    <h2 class="step-title">Step 6: Create Vehicle Information (QVR)</h2>
+    <p>
+      QVR's (Query Vehicle Registration) are similar to QP's, except they provide police with information about your vehicle. Note: You must be in the vehicle that you want to register.
+    </p>
+    <p>
+      <strong>Example One:</strong><br>
+      <code>"NHE318, 2010 Blue Holden Commodore, Current WOF - Expires 20/01/2024, Current Registration - Expires 05/04/2024. Registered owner a John Smith at a 271 Address"</code>
+    </p>
+    <p>
+      <strong>Example Two:</strong><br>
+      <code>"CEP155, 2005 White Toyota Celica, Current WOF - Expires 28/04/2024, Registration - Expired 19/11/2023. Registered owner a John Smith at a 106 Address. Certified for steering and suspension modification"</code>
+    </p>
+    
+    <h2 class="step-title">Step 7: Final Notes</h2>
+    <p>
+      Once you've completed the above steps correctly, you only need to provide your name to police whenever stopped; they can then search for your name and find the QP you entered. The same applies to any QVR the police search.
+    </p>
+    <p>
+      Information on how to save vehicle information is available in section 6 of the rules.
+    </p>
+    <p>
+      If you need further assistance with this section, please open a general support ticket on Discord.
+    </p>
+    
+    <!-- Back to Top Button -->
+    <button id="backToTop">Back to Top</button>
+  </div>
+  
+  <script>
+    // Back to Top functionality.
+    document.getElementById("backToTop").addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+</body>
+</html>
